@@ -7,8 +7,11 @@ public class CommerceSystem {
 
     public CommerceSystem(List<Category> categories) {
         this.categories = categories;
+        initCategories();
+    }
 
-        // 카테고리 데이터 세팅
+    // 카테고리 데이터 세팅
+    private void initCategories() {
         List<Product> electronics = new ArrayList<>();
         electronics.add(new Product("Galaxy Buds", 245000, "노이즈 캔슬링 무선 이어폰", 30));
         electronics.add(new Product("Iphone", 1540000, "아이폰", 10));

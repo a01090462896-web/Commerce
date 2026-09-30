@@ -4,9 +4,9 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        List<Product> products = new ArrayList<>();
+        List<Category> categories = new ArrayList<>();
 
-        CommerceSystem commerceSystem = new CommerceSystem(products);
+        CommerceSystem commerceSystem = new CommerceSystem(categories);
 
         commerceSystem.start();
     }
